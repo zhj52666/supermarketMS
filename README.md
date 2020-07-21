@@ -4,7 +4,7 @@
 大学校内超市管理系统，实现收银台，商品分类管理，商品库存管理，商品管理，营收统计等功能
 
 #### 软件架构
-![img](file:///D:\Temp1\ksohtml12988\wps3.jpg)
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0721/102858_b76cc608_5371991.png "屏幕截图.png")
 
 #### 使用说明
 
@@ -46,7 +46,7 @@
 
  
 
-![img](file:///D:\Temp1\ksohtml12988\wps1.jpg) 
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0721/102927_22bf6c8f_5371991.png "屏幕截图.png")
 
 图2-1 系统功能图
 
@@ -56,25 +56,19 @@
 
 本项目中为了实现2.1中的模块功能，我们设计了四个实体类，分别是用户类，商品类，分类类，销售记录类，商品是属于分类下的，在销售记录中记录售出商品的信息，如图2-2。
 
-![img](file:///D:\Temp1\ksohtml12988\wps2.jpg) 
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0721/102938_cf3a55e5_5371991.png "屏幕截图.png")
 
 图2-2 UML类图
-
-B/S架构的三层结构数据流向如图2-3
-
-![img](file:///D:\Temp1\ksohtml12988\wps3.jpg) 
-
-图2-3 B/S架构三层设计图
 
 2.2.2 数据库表设计
 
 本系统一共设计四张数据表分别是user用户信息表，记录用户名和密码，category分类信息表，记录商品的分类，推荐等级，product商品信息表，记录分类编号，商品名称，生产日期，厂家，进价，售价，库存，售出，进货时间等信息，还有销售记录，记录每一次收银台的销售情况，最后方便统计，该表有商品编号，数量，收入，利润，销售时间等信息，数据库概要设计如图2-4，数据库详细设计如图2-5
 
-![img](file:///D:\Temp1\ksohtml12988\wps4.jpg) 
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0721/103001_644f743f_5371991.png "屏幕截图.png")
 
 图2-4数据库概要设计
 
-![img](file:///D:\Temp1\ksohtml12988\wps5.jpg) 
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0721/103019_35ef7624_5371991.png "屏幕截图.png")
 
 图2-5 数据库详细设计
 
@@ -82,118 +76,42 @@ B/S架构的三层结构数据流向如图2-3
 
 代码结构，如图2-6
 
-![img](file:///D:\Temp1\ksohtml12988\wps6.jpg) 
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0721/103030_7b0c1ab6_5371991.png "屏幕截图.png")
 
 图2-6 项目代码结构
-
-登录功能实现，核心代码如图2-7
-
-![img](file:///D:\Temp1\ksohtml12988\wps7.jpg) 
-
-图2-7 LoginServlet.java
-
-注销功能实现，核心代码如图2-8
-
-![img](file:///D:\Temp1\ksohtml12988\wps8.jpg) 
-
-图2-8 LogoutServlet.java
-
-商品信息展示功能实现，核心代码如图2-9
-
-![img](file:///D:\Temp1\ksohtml12988\wps9.jpg) 
-
-图2-9 ProductShowServlet.java
-
-查询商品功能实现，核心代码如图2-10
-
-![img](file:///D:\Temp1\ksohtml12988\wps10.jpg) 
-
-图2-10 SelectProductServlet
-
-编辑商品功能实现，核心代码如图2-11
-
-![img](file:///D:\Temp1\ksohtml12988\wps11.jpg) 
-
-图2-11 UpdateProductServlet
-
-删除商品功能实现，核心代码如图2-12
-
-![img](file:///D:\Temp1\ksohtml12988\wps12.jpg) 
-
-图2-12 DeleteProductServlet
-
-收银台功能实现，核心代码如图2-13
-
-![img](file:///D:\Temp1\ksohtml12988\wps13.jpg) 
-
-图2-13 CheckstandServlet
-
-销售统计功能实现，核心代码如图2-14
-
-![img](file:///D:\Temp1\ksohtml12988\wps14.jpg) 
-
-图2-14 SaleShowServlet
-
-登录验证实现，核心代码如图2-15
-
-![img](file:///D:\Temp1\ksohtml12988\wps15.jpg)图2-15 LoginServlet
 
 # 3系统测试
 
 登录功能测试，登录输入有问题，会返回前端错误消息，增强用户体验。如图3-1
 
-![img](file:///D:\Temp1\ksohtml12988\wps16.jpg)图3-1 登录功能
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0721/103123_2d3dc027_5371991.png "屏幕截图.png")
 
 首页展示功能测试，如图3-2
 
-![img](file:///D:\Temp1\ksohtml12988\wps17.jpg) 
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0721/103137_a8de0861_5371991.png "屏幕截图.png")
 
 图3-2 首页展示功能
 
 收银台功能测试，点击提交录入交易信息显示价格，商品信息，完成更改库存，记录交易的操作，如图3-3
 
-![img](file:///D:\Temp1\ksohtml12988\wps18.jpg) 
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0721/103146_2745a0cc_5371991.png "屏幕截图.png")
 
 图3-3 收银台功能
 
 分类信息管理功能测试，包含对分类信息的增加，编辑，删除功能，如图3-4
 
-![img](file:///D:\Temp1\ksohtml12988\wps19.jpg) 
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0721/103232_8478a257_5371991.png "屏幕截图.png")
 
 图3-4 分类信息管理功能
 
 商品库存管理功能测试，包含对商品信息的增加，删出，修改，查询入口，对商品库存的增加，如图3-5
 
-![img](file:///D:\Temp1\ksohtml12988\wps20.jpg) 
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0721/103250_f10daae7_5371991.png "屏幕截图.png")
 
 图3-5 商品信息管理功能
 
-模糊搜索功能测试，如图3-6
+销售统计功能测试，如图3-6
 
- ![img](file:///D:\Temp1\ksohtml12988\wps21.jpg)
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0721/103332_c9d6642f_5371991.png "屏幕截图.png")
 
-图3-6 模糊搜索功能
-
-增加商品功能测试，如图3-7
-
-![img](file:///D:\Temp1\ksohtml12988\wps22.jpg) 
-
-图3-7 增加商品功能
-
-修改商品信息功能测试，如图3-8
-
-![img](file:///D:\Temp1\ksohtml12988\wps23.jpg) 
-
-图3-8 修改商品信息功能
-
-增加库存功能测试，输入数量，直接在原有基础增加库存数量，如图3-9
-
-![img](file:///D:\Temp1\ksohtml12988\wps24.jpg) 
-
-图3-9 增加库存功能
-
-销售统计功能测试，如图3-10
-
- ![img](file:///D:\Temp1\ksohtml12988\wps25.jpg)
-
-图3-10 销售统计功能功能
+图3-6 销售统计功能功能
